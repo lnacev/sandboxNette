@@ -1,0 +1,52 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{ifset #title}{include title|striptags} | {/ifset}JP-KONTAKT s.r.o.</title>
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/screen.css">
+ 	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/main-style.css">       
+	<!-- externalCSS -->
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/jquery-ui.css">
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/jquery-ui.structure.css">
+	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/jquery-ui.theme.css">
+	<!-- end -->
+	<link rel="stylesheet" media="print" href="{$basePath}/css/print.css">
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+	<meta name="author" content="Luděk Načev" />
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="{include metaKeywords}" />
+	<meta name="description" content="{include metaDescription}" />
+	<!--{block head}{/block}-->
+</head>
+
+<body>
+	<script type="text/javascript"> document.documentElement.className+=' js' </script>
+	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+	
+        {include content}
+        
+        {block footer}
+	<div id="footer">
+	    <div class="footerContainer"><p>&copy; 2015 JP-KONTAKT s.r.o.</p></div>	
+	</div>
+	{/block}
+	
+        {block scripts}
+	<script src="{$basePath}/js/jquery.js"></script>
+	<script src="{$basePath}/js/netteForms.js"></script>
+	<script src="{$basePath}/js/nette.ajax.js"></script>
+	<script src="{$basePath}/js/main.js"></script>
+	<!-- // Jssor slider -->
+	<script src="{$basePath}/js/jssor/jssor.js"></script>
+	<script src="{$basePath}/js/jssor/jssor.slider.js"></script>
+	<script src="{$basePath}/js/jssor/jQuerySliderSetup.js"></script>
+	<!-- // End slider -->
+	<script src="{$basePath}/js/extensions/jquery-ui.js"></script>
+	{/block}
+</body>
+</html>

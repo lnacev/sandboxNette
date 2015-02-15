@@ -1,0 +1,90 @@
+{* {include '../slider.latte'} *}
+{block #metaKeywords}Kancelářské křesla{/block}
+{block #metaDescription}Kancelářské křesla{/block}
+{block content}
+<div id="content">
+    <div id="header">
+        <div id="nav">
+            <ul class="navbar-nav">
+              <li class="navbar-brand-jpKontakt">JP-KONTAKT</li>
+              <li class="navbar-brand"><a n:class="$presenter->isLinkCurrent('Homepage:*') ? 'active'" n:href="Homepage:default">ÚVOD</a></li>
+              <li class="navbar-brand"><a href="#">NAŠE SLUŽBY</a></li>
+              <li class="navbar-brand"><a href="#">OBCHODNÍ PODMÍNKY</a></li>
+              <li class="navbar-brand"><a href="#">NÁHRADNÍ PLNĚNÍ</a></li>
+              <li class="navbar-brand"><a href="#">VOLNÁ MÍSTA</a></li>
+              <li class="navbar-brand"><a href="#">KONTAKTY</a></li>
+            </ul>
+          <form class="navbar-form navbar-right">
+            <!--<div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">H</button>-->
+          </form>
+        </div>  
+    </div>
+    <div id="middleContentImage">
+        <div id="logo">
+	<!--<h1 n:block=title>Vybavení pro kanceláře, ordinace, archivy a dílny</h1>-->
+        <img class="logoJP" src="{$basePath}/images/logos/JP-KONTAKT_03.png" alt="Logo JP-KONTAKT s.r.o." />
+        </div>
+        <div id="middleBox">
+            <h1>Kancelářské křesla</h1>
+            <p class="middleBoxText">
+                Pracovat za kancelářským stolem znamená dlouhé sezení na pracovní židli. Aby naše páteř zbytečně netrpěla a sedělo se nám pohodlně, je třeba dobře zvolit kvalitní kancelářské židle a křesla<br /><br />– s výbornou ergonomií sezení!
+            </p>    
+        </div>    
+    </div>
+    <div id="middleContent">
+        <div id="middleContentContainer">
+            <div id="box">
+                <h2>Kancelářské židle</h2>
+		<div class="imgBoxContainer">
+		    <img class="imgBox" src="{$basePath}/images/content/JP-KONTAKT_zidle.png" alt="Kancelářské židle - JP-KONTAKT s.r.o." />
+		</div>
+		<p class="boxText">Kancelářská křesla jsou běžnou součástí nejen ...</p>
+		<a class="boxLink" n:href="Posts:KancelarskeZidle" title="Kancelářské židle - více zde">> <span class="boxLinkUnderline">Více zde</span></a>
+		</div>
+            <div id="box2">
+                <h2>Kancelářské křesla</h2>
+		<div class="imgBoxContainer">
+		    <img class="imgBox" src="{$basePath}/images/content/JP-KONTAKT_kreslo.png" alt="Kancelářské křeslo - JP-KONTAKT s.r.o." />
+		</div>
+		<p class="boxText">Kancelářská křesla jsou běžnou součástí nejen ...</p>
+		<a class="boxLink" n:href="Posts:KancelarskeKresla" title="Kancelářské křesla - více zde">> <span class="boxLinkUnderline">Více zde</span></a>
+            </div> 
+                <div id="slider">
+		    <div id="sliderContainer">
+			{include 'slider.latte'}
+		    </div>
+                </div>
+            <div id="icons">
+		<div id="iconsContainer">
+		    <div class="iconsContainerBox">
+			<img src="{$basePath}/images/logos/JP-KONTAKT_06.png" alt="" />
+			<p class="iconsContainerText48">Dodávka do 48 hodin</p><span class="iconsSecondText">Od obdržení objednávky</span>
+		    </div>	
+		    <div class="iconsContainerBox car">
+			<img src="{$basePath}/images/logos/JP-KONTAKT_09.png" alt="" />
+			<p class="iconsContainerTextCar">Doprava zdarma<br /><span class="iconsSecondText">Při objednávce nad 2.000 Kč</span></p>
+		    </div>
+		    <div class="iconsContainerBox zaruka">
+			<img src="{$basePath}/images/logos/JP-KONTAKT_04.png" alt="" />
+			<p class="iconsContainerText7">7 let záruka</p>
+		    </div>
+		    <div class="iconsContainerBox zZdarma">
+			<img src="{$basePath}/images/logos/JP-KONTAKT_12.png" alt="" />
+			<p class="iconsContainerTextZdarma">Zápůjčka zdarma</p><span class="iconsSecondText">Při objednávce nad 2.000 Kč</span>
+		    </div>   
+		</div>    
+            </div>
+            <h3 class="middleH3">Kancelářské židle a křesla</h3>
+        </div>
+        <div id="middleProducts">
+            <p id="middleProductsText">U nás si vyberete z velkého množství typů, barev a materiálů. Mimo jiné nabízíme ergonomické a zdravotní židle, které poskytnou Vašim zádům důkladnou oporu a práce tak bude hned o něco příjemnější. Rádi Vám poradíme, které kancelářské židle a křesla z naší bohaté nabídky budou ta pravá právě pro Vás. Nabízíme také možnost čerpat od naší společnosti JP-KONTAKT s.r.o. <a class="nahrdaniPlneni" href="#" title="Náhradní plnění">náhradní plnění</a> – jsme přímým zaměstnavatelem zdravotně postižených osob.</p>
+            <h4>Akční slevy</h4>
+        </div>    
+    </div>
+</div>
+{/block}
+
+
